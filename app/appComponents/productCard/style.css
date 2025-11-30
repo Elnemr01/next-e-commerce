@@ -1,0 +1,15 @@
+.product-List {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+    margin: 20px 0;
+}
+
+.products input {
+    display: block;
+    padding: 0.5rem;
+    margin: 1rem auto;
+    width: 50%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}

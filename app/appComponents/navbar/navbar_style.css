@@ -1,0 +1,48 @@
+nav {
+    padding: 20px 0;
+    box-shadow : 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    color: brown;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+nav .logo a {
+    
+}
+
+nav .links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .875rem;
+}
+
+@media (width <= 667px) {
+    nav .links {
+        display: none;
+    }
+}
+
+
+@media (width > 667px) {
+    nav .bars {
+        display: none;
+    }
+}
+
+nav .bars {
+    outline: none;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+    padding: 0;
+}
