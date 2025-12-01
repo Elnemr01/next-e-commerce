@@ -30,7 +30,7 @@ const Navbar = () => {
         <nav>
             <div className="container">
                 <div className="logo">
-                    <Link href="/">Elnemr Store</Link>
+                    <Link href="/">E-Store</Link>
                 </div>
                 <ul className="links">
                     {
@@ -46,7 +46,9 @@ const Navbar = () => {
                         <DropdownMenuContent className="w-56" align="start">
                             <DropdownMenuGroup>
                                 {
-                                    links.map((l,i)=> <DropdownMenuItem key={i}><Link href={l.to}>{l.val}</Link></DropdownMenuItem>)
+                                    links.map((l,i)=> <DropdownMenuItem key={i} asChild>
+                                        <Link href={l.to} className="w-full cursor-pointer">{l.val}</Link>
+                                    </DropdownMenuItem>)
                                 }
                             </DropdownMenuGroup>
                         </DropdownMenuContent>

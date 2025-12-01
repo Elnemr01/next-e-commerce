@@ -22,7 +22,7 @@ const Card = ({product}: any) => {
             <p className="price font-medium">
                 {product.default_price?.unit_amount} $</p>
             <Button className='my-2 w-full'>
-                <Link href={`/products/${product.id}`}>View Details</Link>
+                <Link href={`/products/${product.id}`} className='w-full'>View Details</Link>
             </Button>
         </div>
     )
