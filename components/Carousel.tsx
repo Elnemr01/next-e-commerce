@@ -1,6 +1,5 @@
 import * as React from "react"
 
-import { Card, CardContent } from "@/components/ui/card"
 import {
   Carousel,
   CarouselContent,
@@ -12,7 +11,7 @@ import Image from "next/image"
 
 export function CarouselDemo({products}: any) {
     return (
-        <Carousel className="w-full max-w-xs mx-auto mt-[20px]">
+        <Carousel className="w-full max-w-xs mx-auto my-[50px]">
             <CarouselContent>
                 {Array.from({ length: 5 }).map((_, index) => (
                 <CarouselItem key={index} className="h-full">
